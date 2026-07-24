@@ -539,14 +539,6 @@ html[data-lang="en"] .lang-en {
   background: currentColor;
 }
 
-.notice-page-lede {
-  max-width: 620px;
-  margin: 0;
-  color: var(--muted);
-  line-height: 1.8;
-  word-break: keep-all;
-}
-
 .notice-list {
   border-top: 2px solid var(--ink);
 }
