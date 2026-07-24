@@ -267,24 +267,12 @@ html[data-lang="en"] .lang-en {
 }
 
 .visual-caption {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 18px;
+  display: flex;
   align-items: center;
   padding: 18px 22px 20px;
   color: rgba(255, 255, 255, 0.8);
   background: var(--forest);
   font-size: 0.82rem;
-}
-
-.visual-index {
-  display: grid;
-  width: 36px;
-  height: 36px;
-  place-items: center;
-  border: 1px solid var(--line-light);
-  border-radius: 50%;
-  color: white;
 }
 
 .manifesto {
