@@ -164,9 +164,10 @@ html[data-lang="en"] .lang-en {
 }
 
 .hero-grid {
+  width: min(1320px, calc(100% - 48px));
   display: grid;
-  grid-template-columns: minmax(0, 0.92fr) minmax(420px, 0.88fr);
-  gap: 64px;
+  grid-template-columns: minmax(0, 0.78fr) minmax(480px, 1.12fr);
+  gap: 48px;
   align-items: center;
 }
 
@@ -257,6 +258,11 @@ html[data-lang="en"] .lang-en {
   border-radius: var(--radius-lg);
   background: var(--forest);
   box-shadow: var(--shadow);
+}
+
+html[data-lang="en"] .hero-visual {
+  align-self: start;
+  margin-top: 40px;
 }
 
 .hero-visual img {
@@ -656,6 +662,10 @@ html[data-lang="en"] .lang-en {
 
   .hero-visual {
     border-radius: 26px;
+  }
+
+  html[data-lang="en"] .hero-visual {
+    margin-top: 0;
   }
 
   .manifesto,
