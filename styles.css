@@ -266,15 +266,6 @@ html[data-lang="en"] .lang-en {
   object-fit: contain;
 }
 
-.visual-caption {
-  display: flex;
-  align-items: center;
-  padding: 18px 22px 20px;
-  color: rgba(255, 255, 255, 0.8);
-  background: var(--forest);
-  font-size: 0.82rem;
-}
-
 .manifesto {
   padding: 78px 0;
   color: white;
@@ -665,10 +656,6 @@ html[data-lang="en"] .lang-en {
 
   .hero-visual {
     border-radius: 26px;
-  }
-
-  .visual-caption {
-    padding: 16px;
   }
 
   .manifesto,
