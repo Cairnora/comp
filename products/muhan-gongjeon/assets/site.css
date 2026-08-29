@@ -218,6 +218,40 @@ h1 {
   margin-top: 0.45rem;
 }
 
+.legal-page {
+  width: min(100% - 2rem, 50rem);
+  padding-top: clamp(2.5rem, 6vw, 4rem);
+}
+
+.legal-page h1 {
+  max-width: none;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.legal-page .lead {
+  max-width: none;
+  font-size: 1rem;
+}
+
+.legal-document {
+  margin-top: 2.5rem;
+  color: #bdc5e8;
+}
+
+.legal-document h2 {
+  margin: 2.25rem 0 0.7rem;
+  color: #fff;
+  font-size: clamp(1.15rem, 2.5vw, 1.35rem);
+}
+
+.legal-document h2:first-child {
+  margin-top: 0;
+}
+
+.legal-document p {
+  margin: 0.75rem 0;
+}
+
 .table-wrap {
   overflow-x: auto;
   margin-top: 1rem;
@@ -336,6 +370,7 @@ tr:last-child td {
   .card p,
   .document-section p,
   .document-section li,
+  .legal-document,
   .contact-box p,
   .site-footer {
     color: #222;
