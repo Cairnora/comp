@@ -25,11 +25,13 @@ jobs:
       - name: Check out source
         uses: actions/checkout@v4
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+
       - name: Prepare static site
-        run: |
-          mkdir -p _site
-          cp index.html styles.css site.js CNAME sitemap.xml robots.txt .nojekyll _site/
-          cp -R assets notices _site/
+        run: node scripts/prepare-site.mjs
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5

@@ -1,14 +1,30 @@
 # AKORA Company Website
 
-아코라 유한회사의 정적 회사 홈페이지와 공고 게시판입니다.
+아코라 유한회사의 정적 회사 홈페이지, 공고 게시판, 제품별 공개 정책 문서입니다.
 
 ## 구성
 
 - `index.html`: 회사 소개 1페이지
 - `notices/index.html`: 공고 목록
 - `notices/<게시일>-<slug>/index.html`: 공고 원문
+- `products/<product-slug>/`: 제품별 개인정보처리방침·이용약관·고객지원·오픈소스 고지
+- `scripts/prepare-site.mjs`: 공개 준비가 끝난 제품 정책만 포함하는 Pages 빌드
 - `styles.css`: 공통 스타일
 - `site.js`: 한국어/영어 전환
+
+## 제품 정책 추가
+
+제품 정책은 제품 저장소의 엄격 검증을 통과한 빌드만 받습니다. 제품 디렉터리에
+`publish-manifest.json`이 없거나 HTML에 초안 값이 남아 있으면 Pages 빌드가 해당 제품을
+게시하지 않거나 실패합니다.
+
+무한공전은 `/Users/ahn/Workspace/html5-game`에서 다음 명령으로 내보냅니다.
+
+```bash
+npm run export:legal:company
+```
+
+공개 주소는 `https://akoracorp.com/products/muhan-gongjeon/`입니다.
 
 ## 공고 추가
 
