@@ -85,7 +85,14 @@ main {
   list-style: none;
 }
 
-.site-nav ul {
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem 1rem;
+}
+
+.site-nav > ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -133,6 +140,84 @@ h1 {
   margin: 1.25rem 0 0;
   color: #c4cbed;
   font-size: clamp(1rem, 2.5vw, 1.18rem);
+}
+
+.language-selection {
+  width: min(100%, 22rem);
+  margin-top: 2.5rem;
+}
+
+.language-picker {
+  position: relative;
+  color: #eef2ff;
+}
+
+.language-picker summary {
+  min-height: 44px;
+  padding: 0.7rem 1rem;
+  color: #fff;
+  background: rgb(18 24 49 / 92%);
+  border: 1px solid rgb(133 151 226 / 35%);
+  border-radius: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.language-picker summary:hover,
+.language-picker[open] summary {
+  background: #18214a;
+  border-color: rgb(170 184 255 / 70%);
+}
+
+.language-options {
+  position: absolute;
+  z-index: 5;
+  top: calc(100% + 0.45rem);
+  right: 0;
+  width: max-content;
+  min-width: 12rem;
+  margin: 0;
+  padding: 0.4rem;
+  list-style: none;
+  background: #111832;
+  border: 1px solid rgb(133 151 226 / 35%);
+  border-radius: 0.75rem;
+  box-shadow: 0 1rem 2.5rem rgb(0 0 0 / 38%);
+}
+
+.language-options a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.65rem 0.8rem;
+  color: #cdd5ff;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+
+.language-options a:hover {
+  color: #fff;
+  background: rgb(133 151 226 / 16%);
+}
+
+.language-options a[aria-current="page"] {
+  color: #fff;
+  background: rgb(133 151 226 / 24%);
+}
+
+.language-picker--main {
+  width: 100%;
+}
+
+.language-picker--main summary {
+  padding: 1rem 1.1rem;
+  font-size: 1.05rem;
+}
+
+.language-picker--main .language-options {
+  right: auto;
+  left: 0;
+  width: 100%;
 }
 
 .meta {
@@ -316,7 +401,14 @@ tr:last-child td {
     flex-direction: column;
   }
 
-  .site-nav ul {
+  .site-nav {
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .site-nav > ul {
     justify-content: flex-start;
   }
 
@@ -342,6 +434,7 @@ tr:last-child td {
   }
 
   .site-nav,
+  .language-picker,
   .skip-link {
     display: none;
   }
