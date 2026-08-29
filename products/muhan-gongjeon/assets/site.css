@@ -167,6 +167,10 @@ h1 {
   display: none;
 }
 
+.language-picker summary::marker {
+  content: "";
+}
+
 .language-picker summary:hover,
 .language-picker[open] summary {
   color: #fff;
