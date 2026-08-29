@@ -37,6 +37,22 @@
 
 이 플러그인이 연결하는 Google Mobile Ads SDK 및 광고 서비스에는 Google의 별도 서비스 약관이 적용됩니다.
 
+## Capacitor Firebase Analytics
+
+- Package: `@capacitor-firebase/analytics`
+- Version: `8.4.0`
+- License: Apache License 2.0
+- Source: https://github.com/capawesome-team/capacitor-firebase
+
+## Firebase SDK
+
+- Package: `firebase`
+- Version: `12.18.0`
+- License: Apache License 2.0
+- Source: https://github.com/firebase/firebase-js-sdk
+
+네이티브 Google Analytics for Firebase SDK와 서비스에는 Google의 별도 이용 조건이 적용됩니다.
+
 ## i18next
 
 - Package: `i18next`

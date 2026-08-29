@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://akoracorp.com/products/endless-orbit/sitemap.xml

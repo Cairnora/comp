@@ -18,7 +18,7 @@ products/<product-slug>/
 
 ## 무한공전
 
-- 제품 경로: `products/muhan-gongjeon/`
-- 공개 기본 주소: `https://akoracorp.com/products/muhan-gongjeon/`
+- 제품 경로: `products/endless-orbit/`
+- 공개 기본 주소: `https://akoracorp.com/products/endless-orbit/`
 - 생성 원본: `/Users/ahn/Workspace/html5-game/legal-site/`
 - 생성 명령: `/Users/ahn/Workspace/html5-game`에서 `npm run export:legal:company`

@@ -24,7 +24,7 @@
 npm run export:legal:company
 ```
 
-공개 기본 주소는 `https://akoracorp.com/products/muhan-gongjeon/`이며, 한국어 문서는 `/ko/`, 영어 문서는 `/en/` 아래에 있습니다.
+공개 기본 주소는 `https://akoracorp.com/products/endless-orbit/`이며, 한국어 문서는 `/ko/`, 영어 문서는 `/en/` 아래에 있습니다.
 
 ## 공고 추가
 
