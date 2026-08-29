@@ -7,7 +7,7 @@
 - `index.html`: 회사 소개 1페이지
 - `notices/index.html`: 공고 목록
 - `notices/<게시일>-<slug>/index.html`: 공고 원문
-- `products/<product-slug>/`: 제품별 개인정보처리방침·이용약관·고객지원·오픈소스 고지
+- `products/<product-slug>/`: 제품별 한국어·영어 개인정보처리방침, 이용약관, 고객지원과 오픈소스 고지
 - `scripts/prepare-site.mjs`: 공개 준비가 끝난 제품 정책만 포함하는 Pages 빌드
 - `styles.css`: 공통 스타일
 - `site.js`: 한국어/영어 전환
@@ -24,7 +24,7 @@
 npm run export:legal:company
 ```
 
-공개 주소는 `https://akoracorp.com/products/muhan-gongjeon/`입니다.
+공개 기본 주소는 `https://akoracorp.com/products/muhan-gongjeon/`이며, 한국어 문서는 `/ko/`, 영어 문서는 `/en/` 아래에 있습니다.
 
 ## 공고 추가
 

@@ -79,9 +79,14 @@ function validateProduct(productRoot, productSlug, manifestPath) {
 
   const requiredFiles = [
     "index.html",
-    "privacy.html",
-    "terms.html",
-    "support.html",
+    "ko/index.html",
+    "ko/privacy.html",
+    "ko/terms.html",
+    "ko/support.html",
+    "en/index.html",
+    "en/privacy.html",
+    "en/terms.html",
+    "en/support.html",
     "licenses.html",
     "assets/site.css",
     "assets/app-icon-192.png",
