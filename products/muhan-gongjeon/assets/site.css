@@ -142,31 +142,36 @@ h1 {
   font-size: clamp(1rem, 2.5vw, 1.18rem);
 }
 
-.language-selection {
-  width: min(100%, 22rem);
-  margin-top: 2.5rem;
-}
-
 .language-picker {
   position: relative;
+  flex: 0 0 auto;
   color: #eef2ff;
 }
 
 .language-picker summary {
-  min-height: 44px;
-  padding: 0.7rem 1rem;
-  color: #fff;
-  background: rgb(18 24 49 / 92%);
-  border: 1px solid rgb(133 151 226 / 35%);
-  border-radius: 0.75rem;
-  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0.35rem 0.75rem;
+  color: #cdd5ff;
+  background: transparent;
+  border: 1px solid rgb(133 151 226 / 24%);
+  border-radius: 0.55rem;
+  font-size: 0.9rem;
+  font-weight: 650;
+  list-style: none;
   cursor: pointer;
+}
+
+.language-picker summary::-webkit-details-marker {
+  display: none;
 }
 
 .language-picker summary:hover,
 .language-picker[open] summary {
-  background: #18214a;
-  border-color: rgb(170 184 255 / 70%);
+  color: #fff;
+  background: rgb(133 151 226 / 10%);
+  border-color: rgb(170 184 255 / 42%);
 }
 
 .language-options {
@@ -175,23 +180,24 @@ h1 {
   top: calc(100% + 0.45rem);
   right: 0;
   width: max-content;
-  min-width: 12rem;
+  min-width: 9.5rem;
   margin: 0;
-  padding: 0.4rem;
+  padding: 0.3rem;
   list-style: none;
-  background: #111832;
-  border: 1px solid rgb(133 151 226 / 35%);
-  border-radius: 0.75rem;
-  box-shadow: 0 1rem 2.5rem rgb(0 0 0 / 38%);
+  background: #10162d;
+  border: 1px solid rgb(133 151 226 / 28%);
+  border-radius: 0.6rem;
+  box-shadow: 0 0.8rem 1.8rem rgb(0 0 0 / 34%);
 }
 
 .language-options a {
   display: flex;
   align-items: center;
-  min-height: 44px;
-  padding: 0.65rem 0.8rem;
+  min-height: 40px;
+  padding: 0.5rem 0.7rem;
   color: #cdd5ff;
-  border-radius: 0.5rem;
+  border-radius: 0.4rem;
+  font-size: 0.9rem;
   text-decoration: none;
 }
 
@@ -202,22 +208,7 @@ h1 {
 
 .language-options a[aria-current="page"] {
   color: #fff;
-  background: rgb(133 151 226 / 24%);
-}
-
-.language-picker--main {
-  width: 100%;
-}
-
-.language-picker--main summary {
-  padding: 1rem 1.1rem;
-  font-size: 1.05rem;
-}
-
-.language-picker--main .language-options {
-  right: auto;
-  left: 0;
-  width: 100%;
+  background: rgb(133 151 226 / 16%);
 }
 
 .meta {
@@ -399,6 +390,11 @@ tr:last-child td {
   .site-header {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .site-header--language-only {
+    align-items: center;
+    flex-direction: row;
   }
 
   .site-nav {
