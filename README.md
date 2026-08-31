@@ -24,7 +24,7 @@
 npm run export:legal:company
 ```
 
-공개 기본 주소는 `https://akoracorp.com/products/endless-orbit/`이며, 한국어 문서는 `/ko/`, 영어 문서는 `/en/` 아래에 있습니다.
+공개 기본 주소는 `https://akoracorp.com/products/endless-orbit/`이며, 한국어 문서는 `/ko/`, 영어 문서는 `/en/` 아래에 있습니다. 앱은 선택된 언어의 문서를 직접 열고, 언어가 지정되지 않은 기본 진입점은 영어를 우선합니다.
 
 ## 공고 추가
 
