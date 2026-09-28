@@ -24,6 +24,7 @@ const rootFiles = [
   "CNAME",
   "sitemap.xml",
   "robots.txt",
+  "app-ads.txt",
   ".nojekyll",
 ];
 const rootDirectories = ["assets", "notices"];
