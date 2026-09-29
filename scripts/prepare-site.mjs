@@ -92,6 +92,7 @@ function validateProduct(productRoot, productSlug, manifestPath) {
     "en/licenses.html",
     "licenses.html",
     "assets/site.css",
+    "assets/language-redirect.js",
     "assets/app-icon-192.png",
   ];
   for (const file of requiredFiles) {
